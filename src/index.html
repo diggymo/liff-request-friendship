@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>LIFF requestFriendship() デモ</title>
+</head>
+<body>
+  <div class="container">
+    <h1 class="title">LIFF requestFriendship()</h1>
+
+    <div id="status" class="status-area">
+      <div class="status-row">
+        <span class="status-label">LIFF:</span>
+        <span id="liff-status" class="badge badge--gray">初期化中...</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">ログイン:</span>
+        <span id="login-status" class="badge badge--gray">-</span>
+      </div>
+      <div class="status-row">
+        <span class="status-label">友だち:</span>
+        <span id="friendship-status" class="badge badge--gray">未確認</span>
+      </div>
+    </div>
+
+    <div id="warning" class="warning" style="display: none;">
+      ⚠ 外部ブラウザでは requestFriendship() は動作しません。LINEアプリ内で開いてください。
+    </div>
+
+    <div class="button-area">
+      <button id="btn-check-friendship" class="btn btn--secondary" disabled>
+        友だち状態を確認
+      </button>
+      <button id="btn-request-friendship" class="btn btn--primary" disabled>
+        友だち追加をリクエスト
+      </button>
+    </div>
+
+    <div class="log-area">
+      <h2 class="log-title">ログ</h2>
+      <div id="log"></div>
+    </div>
+  </div>
+</body>
+</html>
